@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" id="style-css-file" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBS Giriş</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="canvas-container">
+      <div class="img-cont">
+        <img
+          src="./images/logo_pgm.svg"
+          style="width: 300px"
+          alt=""
+          class="pgm-logo"
+        />
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="login-container">
+      <div class="logo d-flex justify-content-center">
+        <img
+          class="img-fluid mx-auto"
+          style="width: 65%"
+          src="./images/logo_pbs.png"
+        />
+      </div>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h4
+              class="text-center"
+              style="font-size: 0.9rem; font-weight: bolder"
+            >
+              Kullanıcı Girişi
+            </h4>
+            <p class="text-center" style="font-size: 0.8rem">
+              Hesabınıza giriş yapmak için bilgilerinizi giriniz.
+            </p>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <input
+                    style="border: none; background-color: #f0f0f0"
+                    type="text"
+                    class="form-control"
+                    placeholder="Sicil No (ab olmadan)"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    style="border: none; background-color: #f0f0f0"
+                    type="password"
+                    class="form-control"
+                    placeholder="Şifre"
+                    required
+                  />
+                </div>
+                <div id="captcha" class="form-group">
+                  <input
+                    style="border: black solid 1px"
+                    type="text"
+                    class="form-control"
+                    placeholder="captcha buraya gelecek"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    style="border: none; background-color: #f0f0f0"
+                    type="text"
+                    class="form-control"
+                    placeholder="Yukarıdaki güvenlik kodunu giriniz."
+                    required
+                  />
+                </div>
+                <a href="#" id="grisi_btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  GİRİŞ YAP
+                </a>
+                <a href="#"
+                  ><p class="text-center mt-3" style="font-size: 0.8rem">
+                    Şifremi Unuttum!
+                  </p></a
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="welcome.css" />
+    <title>PBS' ye Hoşgeldiniz</title>
+  </head>
+  <body>
+    <div class="canvas-container">
+      <div class="img-cont">
+        <img
+          src="./images/logo_pgm.svg"
+          style="width: 300px"
+          alt=""
+          class="pgm-logo"
+        />
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      // Sayfa yönlendirmesini 2 saniye sonra gerçekleştirelim
+      setTimeout(function () {
+        window.location.href = "login.html";
+      }, 1200);
+    </script>
+  </body>
+</html>
